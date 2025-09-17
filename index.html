@@ -1,34 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>YouTube Chat Click Tracker - Gizlilik Politikası</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MezatLite - Gizlilik Politikası</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .contact {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .version {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+    </style>
 </head>
 <body>
-    <h1>YouTube Chat Click Tracker - Gizlilik Politikası</h1>
-    
-    <h2>Toplanan Veriler</h2>
-    <p>Bu extension sadece şu verileri toplar:</p>
-    <ul>
-        <li>YouTube chat'te tıkladığınız kullanıcı adları</li>
-        <li>Google Sheets link ayarınız</li>
-        <li>Kullanım istatistikleri (tıklama sayısı)</li>
-    </ul>
-    
-    <h2>Veri Kullanımı</h2>
-    <p>Toplanan veriler:</p>
-    <ul>
-        <li>Sadece cihazınızda yerel olarak saklanır</li>
-        <li>Google Sheets'inizde kendi kontrolünüzde tutulur</li>
-        <li>Hiçbir sunucuya veya üçüncü tarafa gönderilmez</li>
-    </ul>
-    
-    <h2>Veri Paylaşımı</h2>
-    <p>Hiçbir veri üçüncü taraflarla paylaşılmaz.</p>
-    
-    <h2>Veri Silme</h2>
-    <p>Extension'ı kaldırdığınızda tüm yerel veriler silinir.</p>
-    
-    <h2>İletişim</h2>
-    <p>Sorular için: [email-adresin]</p>
+    <div class="container">
+        <h1>MezatLite Chrome Uzantısı<br>Gizlilik Politikası</h1>
+
+        <div class="highlight">
+            <strong>Önemli Not:</strong> MezatLite uzantısı hiçbir kişisel veriyi toplamaz, saklamaz veya üçüncü taraflarla paylaşmaz. Tüm veriler kullanıcının bilgisayarında yerel olarak saklanır.
+        </div>
+
+        <h2>1. Genel Bilgiler</h2>
+        <p>Bu gizlilik politikası, MezatLite Chrome browser uzantısının veri kullanım uygulamalarını açıklamaktadır. Uzantı, YouTube canlı yayın sohbetlerinde moderasyon ve kullanıcı yönetimi amacıyla geliştirilmiştir.</p>
+
+        <h2>2. Toplanan Veriler</h2>
+        <h3>2.1 Kişisel Veri Toplama</h3>
+        <p>MezatLite <strong>hiçbir kişisel veri toplamaz</strong>. Uzantı:</p>
+        <ul>
+            <li>Kullanıcı adı, e-posta adresi veya kimlik bilgilerini kaydetmez</li>
+            <li>Tarayıcı geçmişi veya kişisel bilgilere erişmez</li>
+            <li>Kullanıcı davranışlarını takip etmez</li>
+            <li>Analitik veya izleme araçları kullanmaz</li>
+        </ul>
+
+        <h3>2.2 Yerel Olarak Saklanan Veriler</h3>
+        <p>Uzantı sadece aşağıdaki verileri kullanıcının bilgisayarında yerel olarak saklar:</p>
+        <ul>
+            <li>Moderatör etkinlik durumu (açık/kapalı)</li>
+            <li>Google Sheets bağlantı URL'si</li>
+            <li>Kayıtlı kullanıcı listesi</li>
+            <li>Son senkronizasyon zamanı</li>
+            <li>Yazdırma kuyruğu verileri</li>
+            <li>Tıklama sayısı ve son işlem yapılan kullanıcı</li>
+        </ul>
+
+        <h2>3. Kullanılan İzinler</h2>
+        <h3>3.1 Storage (Depolama) İzni</h3>
+        <p>Kullanıcı ayarlarını ve tercihlerini yerel olarak saklamak için kullanılır. Bu veriler sadece kullanıcının cihazında bulunur ve hiçbir dış sunucuya gönderilmez.</p>
+
+        <h3>3.2 Tabs (Sekmeler) İzni</h3>
+        <p>YouTube sayfalarında uzantının düzgün çalışabilmesi için gereklidir. Bu izin:</p>
+        <ul>
+            <li>Aktif sekmenin YouTube olup olmadığını kontrol eder</li>
+            <li>Gerektiğinde kullanıcıyı canlı chat sayfasına yönlendirir</li>
+            <li>Sadece youtube.com domain'inde çalışır</li>
+        </ul>
+
+        <h3>3.3 Host Permissions (Ana Makine İzinleri)</h3>
+        <p>Uzantı sadece aşağıdaki sitelere erişim sağlar:</p>
+        <ul>
+            <li><strong>youtube.com:</strong> Canlı chat mesajlarını analiz etmek için</li>
+            <li><strong>docs.google.com:</strong> Google Sheets'ten kullanıcı listelerini okumak için</li>
+            <li><strong>script.google.com:</strong> Google Apps Script ile veri senkronizasyonu için</li>
+        </ul>
+
+        <h2>4. Üçüncü Taraf Servisleri</h2>
+        <h3>4.1 Google Services</h3>
+        <p>Uzantı, kullanıcı listesi yönetimi için Google Services kullanır:</p>
+        <ul>
+            <li><strong>Google Sheets:</strong> Kullanıcı listelerini okuma (sadece kullanıcının paylaştığı public linkler)</li>
+            <li><strong>Google Apps Script:</strong> Veri senkronizasyonu için</li>
+        </ul>
+        <p>Bu servislere gönderilen veriler Google'ın kendi gizlilik politikasına tabidir.</p>
+
+        <h3>4.2 WebSocket Bağlantısı</h3>
+        <p>Uzantı, yerel yazıcı entegrasyonu için localhost (127.0.0.1) üzerinden WebSocket bağlantısı kurabilir. Bu bağlantı:</p>
+        <ul>
+            <li>Sadece kullanıcının kendi bilgisayarındaki servise bağlanır</li>
+            <li>Hiçbir dış sunucuya veri göndermez</li>
+            <li>Kullanıcının kontrolündedir ve isteğe bağlıdır</li>
+        </ul>
+
+        <h2>5. Veri Güvenliği</h2>
+        <p>Tüm veriler kullanıcının bilgisayarında Chrome'ın güvenli storage API'si kullanılarak saklanır. Uzantı:</p>
+        <ul>
+            <li>Verileri şifrelemez (çünkü hassas veri içermez)</li>
+            <li>Dış sunuculara veri aktarımı yapmaz</li>
+            <li>Sadece gerekli minimum izinleri kullanır</li>
+        </ul>
+
+        <h2>6. Çocukların Gizliliği</h2>
+        <p>MezatLite özellikle çocuklara yönelik tasarlanmamıştır ve 13 yaşından küçük çocuklardan kasıtlı olarak veri toplamaz. Ebeveynler çocuklarının internet kullanımını denetlemelidir.</p>
+
+        <h2>7. Kullanıcı Hakları</h2>
+        <p>Kullanıcılar istedikleri zaman:</p>
+        <ul>
+            <li>Uzantıyı kaldırabilir (tüm yerel veriler silinir)</li>
+            <li>Chrome ayarlarından uzantı verilerini temizleyebilir</li>
+            <li>Uzantının izinlerini iptal edebilir</li>
+        </ul>
+
+        <h2>8. Politika Değişiklikleri</h2>
+        <p>Bu gizlilik politikası güncellendiğinde, değişiklikler uzantının yeni versiyonlarında duyurulacaktır. Önemli değişiklikler için kullanıcılar bilgilendirilecektir.</p>
+
+        <h2>9. Yasal Uyumluluk</h2>
+        <p>Bu uzantı aşağıdaki düzenlemelere uygun olarak geliştirilmiştir:</p>
+        <ul>
+            <li>Chrome Web Store Developer Program Policies</li>
+            <li>GDPR (General Data Protection Regulation)</li>
+            <li>KVKK (Kişisel Verilerin Korunması Kanunu)</li>
+        </ul>
+
+        <div class="contact">
+            <h2 style="color: white; border: none; margin: 0; padding: 0;">10. İletişim</h2>
+            <p>Bu gizlilik politikası hakkında sorularınız varsa bizimle iletişime geçebilirsiniz:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:asimsekfurkan@yandex.com">asimsekfurkan@yandex.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Afsimsek25/mezatlite" target="_blank">https://github.com/Afsimsek25/mezatlite</a></p>
+        </div>
+
+        <div class="version">
+            <p><strong>Son Güncelleme:</strong> Ocak 2025<br>
+            <strong>Versiyon:</strong> 1.0<br>
+            <strong>Uzantı:</strong> MezatLite v1.0.0</p>
+        </div>
+    </div>
 </body>
 </html>
